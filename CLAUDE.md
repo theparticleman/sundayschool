@@ -25,9 +25,13 @@ Content is hosted externally on Google Slides. This site is a link aggregator on
 
 ## Adding New Lesson Links
 
-1. Edit the appropriate HTML file (index.html for current year)
-2. Add a new `<a>` element inside the `<main>` section, following existing format
-3. Lessons are listed in reverse chronological order (newest first)
+1. Check the memory file for Bro. Turner's lesson schedule to identify the next upcoming lesson
+2. Search Google Drive for a presentation matching the lesson title (use `mcp__claude_ai_Google_Drive__search_files` with the lesson title and `mimeType = 'application/vnd.google-apps.presentation'`)
+3. If a matching slide deck is found, use its share link (replace the URL suffix with `?usp=sharing`)
+4. If no matching slide deck is found, ask the user to create one first
+5. Edit the appropriate HTML file (index.html for current year)
+6. Add a new `<a>` element inside the `<main>` section, following existing format
+7. Lessons are listed in reverse chronological order (newest first)
 
 ## Navigation Pattern
 
