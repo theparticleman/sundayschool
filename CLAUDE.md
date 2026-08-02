@@ -23,6 +23,14 @@ No build system - this is a pure static HTML/CSS site.
 
 Content is hosted externally on Google Slides. This site is a link aggregator only.
 
+## Lesson Schedule Reference
+
+The full-year lesson schedule (all weeks, not just Bro. Turner's assigned dates) is the official Come, Follow Me manual:
+
+https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026?lang=eng
+
+Use this to look up the date range and scripture block for any week. The manual page lists scripture references per week; the thematic lesson titles used on this site (e.g. "I Am Doing a Great Work" for Jul 27-Aug 2) come from each week's individual lesson page or from the matching slide deck's title.
+
 ## Adding New Lesson Links
 
 1. Check the memory file for Bro. Turner's lesson schedule to identify the next upcoming lesson
