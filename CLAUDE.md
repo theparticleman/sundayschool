@@ -25,7 +25,13 @@ Content is hosted externally on Google Slides. This site is a link aggregator on
 
 ## Lesson Schedule Reference
 
-The full-year lesson schedule (all weeks, not just Bro. Turner's assigned dates) is the official Come, Follow Me manual:
+**Which weeks the user teaches (source of truth):** the schedule spreadsheet:
+
+https://docs.google.com/spreadsheets/d/1_Yt436vCcCEIFcKqeCUdkes9gv0iYVufqP_e7D95NbI/edit
+
+Consult this spreadsheet to determine which upcoming week the user is assigned to teach.
+
+**Full-year lesson list (all weeks):** the official Come, Follow Me manual:
 
 https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-home-and-church-old-testament-2026?lang=eng
 
@@ -33,7 +39,7 @@ Use this to look up the date range and scripture block for any week. The manual 
 
 ## Adding New Lesson Links
 
-1. Check the memory file for Bro. Turner's lesson schedule to identify the next upcoming lesson
+1. Check the schedule spreadsheet (see "Lesson Schedule Reference" above) to identify the next upcoming lesson the user is assigned to teach
 2. Search Google Drive for a presentation matching the lesson title (use `mcp__claude_ai_Google_Drive__search_files` with the lesson title and `mimeType = 'application/vnd.google-apps.presentation'`)
 3. If a matching slide deck is found, use its share link (replace the URL suffix with `?usp=sharing`)
 4. If no matching slide deck is found, ask the user to create one first
