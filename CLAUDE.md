@@ -54,6 +54,7 @@ https://drive.google.com/drive/u/0/folders/1-Pp1m4P2aiTOdrfTffLjIa795QBuisCL
       - Delete every other slide (the previous lesson's content)
       - Update the title slide's date range and lesson title with `replaceAllText`
       - Replace the scripture block slide's text with the new lesson's scripture block
+      - Point the title slide's "To The Lesson" link (`updateTextStyle` with `fields: "link"`) at the new week's Come, Follow Me lesson page. Get the URL from the hyperlink on that week's Lesson cell in the schedule spreadsheet. `read_file_content` drops hyperlinks, so export the sheet with `download_file_content` (`exportMimeType: "application/zip"`), unzip it, and read the `href` from `Sheet1.html`
       - Don't add new lesson content; the user writes the slides themselves
 4. Ensure the deck's sharing is "anyone with the link" can view: call `share_file` with `permissionId: "anyoneWithLink"` and `role: "reader"` (no need to ask the user to do it manually), then verify with `get_file_permissions` that a permission with `type: anyone` and `role: reader` exists. Do not add the button until it does
 5. Use the deck's share link (replace the URL suffix with `?usp=sharing`)
