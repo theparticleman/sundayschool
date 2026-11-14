@@ -49,8 +49,13 @@ https://drive.google.com/drive/u/0/folders/1-Pp1m4P2aiTOdrfTffLjIa795QBuisCL
    1. Find the most recently modified presentation in the folder
    2. Propose a name for the copy, following the naming convention of the existing decks and the button text in `index.html`, and **show the proposed name to the user for approval before copying**
    3. Copy the deck (`copy_file`) into the same folder with the approved name
-   4. The copy still contains the previous lesson's content; the user edits the slides themselves, so don't change the content
-4. Ensure the deck's sharing is "anyone with the link" can view. `share_file` cannot set link sharing, so ask the user to set it manually (Share > General access > Anyone with the link > Viewer), then verify with `get_file_permissions` that a permission with `type: anyone` and `role: reader` exists. Do not add the button until it does
+   4. Trim the copy into a starter deck with `mcp__claude_ai_Google_Slides__update_presentation`:
+      - Keep the title slide (with its QR code), the site URL slide that follows it, the scripture block slide, and the final site URL slide
+      - Delete every other slide (the previous lesson's content)
+      - Update the title slide's date range and lesson title with `replaceAllText`
+      - Replace the scripture block slide's text with the new lesson's scripture block
+      - Don't add new lesson content; the user writes the slides themselves
+4. Ensure the deck's sharing is "anyone with the link" can view: call `share_file` with `permissionId: "anyoneWithLink"` and `role: "reader"` (no need to ask the user to do it manually), then verify with `get_file_permissions` that a permission with `type: anyone` and `role: reader` exists. Do not add the button until it does
 5. Use the deck's share link (replace the URL suffix with `?usp=sharing`)
 6. Edit the appropriate HTML file (index.html for current year)
 7. Add a new `<a>` element inside the `<main>` section, following existing format
